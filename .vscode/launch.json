@@ -1,0 +1,6 @@
+{
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "C:/path/to/your/compiler/include" // Add the path to your compiler's include directory
+    ]
+}
