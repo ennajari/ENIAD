@@ -1,7 +1,23 @@
 {
-    "terminal.integrated.env.windows": {
-        "PATH": "D:\\mingw32\\bin;${env:PATH}"
-    },
-    "configurations": [
-    ]
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/ENIAD/C++",
+      "program": "d:/ENIAD/C++/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
 }
