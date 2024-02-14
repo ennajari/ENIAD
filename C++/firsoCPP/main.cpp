@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    wchar_t x="b";
+    int x=13;
     cout <<x<< endl;
     return 0;
 }
