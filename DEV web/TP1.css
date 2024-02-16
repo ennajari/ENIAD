@@ -6,3 +6,6 @@ table{
     background-color: aliceblue;
     font-size: 20em;
 }
+td{
+    text-align: center;
+}
