@@ -5,7 +5,15 @@ table{
     margin: 0.5em 0.5em;
     background-color: aliceblue;
     font-size: 20em;
+    border-radius: 3rem;
 }
 td{
+    color: brown;
     text-align: center;
+    border-radius: 3rem;
+}
+tr{
+    padding: auto;
+    
+    background-color: rgb(80, 155, 155);
 }
