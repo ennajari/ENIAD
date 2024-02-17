@@ -1,6 +1,13 @@
 {
   "configurations": [
     {
+      "type": "java",
+      "name": "Untitled",
+      "request": "launch",
+      "mainClass": "Untitled",
+      "projectName": "ENIAD_e81e020a"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
