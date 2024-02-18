@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Competition",
+      "request": "launch",
+      "mainClass": "Competition",
+      "projectName": "ENIAD_e81e020a"
+    },
+    {
+      "type": "java",
       "name": "Untitled",
       "request": "launch",
       "mainClass": "Untitled",
