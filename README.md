@@ -1,5 +1,5 @@
 
-ENIAD (École Nationale de l’Intelligence Artificielle et du Digital) - Berkane, Morocco
+#ENIAD (École Nationale de l’Intelligence Artificielle et du Digital) - Berkane, Morocco
 Welcome to the official repository for ENIAD (École Nationale de l’Intelligence Artificielle et du Digital) located in Berkane, Morocco. ENIAD is a higher education institution specializing in the fields of artificial intelligence and digital technologies. It has been approved by the Council of the Oriental Region.
 
 About ENIAD
