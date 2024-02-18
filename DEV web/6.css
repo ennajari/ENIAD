@@ -1,0 +1,26 @@
+.navi{
+    background-color: rgb(195, 146, 74);
+    border-top-right-radius: 8rem;
+    padding:0.001em;
+    border-bottom-left-radius: 8rem;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    box-shadow: 2px 2px 2px black;
+    display: inline;
+    text-decoration: none;
+    background-color: aquamarine;
+    cursor:pointer;
+    padding: 0.5em;
+    border-radius: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    background-color: bisque;
+}
