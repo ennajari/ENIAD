@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdexcept>
 using namespace std;
-
+//Ennajari abdellah
 double monf(int a, int b, char operat) {
     double c;
     switch(operat) {
