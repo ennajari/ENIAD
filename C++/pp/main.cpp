@@ -2,8 +2,8 @@
 #include <stdexcept>
 using namespace std;
 
-double monf(int x, int y, char operat) {
-    int c,a,b;
+double monf(int a, int b, char operat) {
+    double c;
     switch(operat) {
         case '+':
             c = a + b;
@@ -32,8 +32,10 @@ double monf(int x, int y, char operat) {
         case '%':
             try {
                 if (b != 0) {
-                    c = int(a % b);
+                    c = a % b;
                     cout << "Le reste de la division entière est : " << c << endl;
+                } else {
+                    throw runtime_error("Division par zéro");
                 }
             } catch (const exception& e) {
                 cout << "Erreur : " << e.what() << endl;

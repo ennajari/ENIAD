@@ -1,7 +1,8 @@
 #include <iostream>
 #include <stdexcept>
+//ennajari abdellah
 using namespace std;
-//Ennajari abdellah
+
 double monf(int a, int b, char operat) {
     double c;
     switch(operat) {
@@ -43,7 +44,7 @@ double monf(int a, int b, char operat) {
             break;
         default:
             cout << "Opérateur invalide" << endl;
-            c = 0; 
+            c = 0; // Valeur par défaut en cas d'erreur
     }
     return c;
 }
