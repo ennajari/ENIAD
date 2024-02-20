@@ -43,7 +43,7 @@ double monf(int a, int b, char operat) {
             break;
         default:
             cout << "Opérateur invalide" << endl;
-            c = 0; // Valeur par défaut en cas d'erreur
+            c = 0; 
     }
     return c;
 }
