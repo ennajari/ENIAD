@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1708437265 source:d:\eniad\c++\pp\main.cpp
+1708442018 source:d:\eniad\c++\pp\main.cpp
 	<iostream>
+	<cmath>
 
