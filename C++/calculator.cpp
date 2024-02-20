@@ -23,7 +23,7 @@ double monf(int a, int b, char operat) {
                     c = static_cast<double>(a) / b;
                     cout << "La division est : " << c << endl;
                 } else {
-                    throw runtime_error("Division par zéro");
+                    throw runtime_error("Division par zÃ©ro");
                 }
             } catch (const exception& e) {
                 cout << "Erreur : " << e.what() << endl;
@@ -33,17 +33,17 @@ double monf(int a, int b, char operat) {
             try {
                 if (b != 0) {
                     c = a % b;
-                    cout << "Le reste de la division entière est : " << c << endl;
+                    cout << "Le reste de la division entiÃ¨re est : " << c << endl;
                 } else {
-                    throw runtime_error("Division par zéro");
+                    throw runtime_error("Division par zÃ©ro");
                 }
             } catch (const exception& e) {
                 cout << "Erreur : " << e.what() << endl;
             }
             break;
         default:
-            cout << "Opérateur invalide" << endl;
-            c = 0; // Valeur par défaut en cas d'erreur
+            cout << "OpÃ©rateur invalide" << endl;
+            c = 0; // Valeur par dÃ©faut en cas d'erreur
     }
     return c;
 }
@@ -53,7 +53,7 @@ int main() {
     char z;
     cout << "Entrez deux nombres : ";
     cin >> x >> y;
-    cout << "Entrez un opérateur (+, -, *, /, %) : ";
+    cout << "Entrez un opÃ©rateur (+, -, *, /, %) : ";
     cin >> z;
     monf(x, y, z);
     return 0;
