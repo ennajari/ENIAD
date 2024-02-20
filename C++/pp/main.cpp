@@ -1,7 +1,9 @@
 #include<iostream>
-int main()
-{
-  std::clog << " abdellah Ennajari \0" << "how are you ?" << std::endl ;
-std:: cerr <<"hhhhhhhhhhhh";
-  return 0;
-}
+using namespace std;
+
+ int main(){
+   cout<<"donner un number:";
+   int x;
+   cin>>x;
+   cerr<<"votre number est:"<<x;
+ }
