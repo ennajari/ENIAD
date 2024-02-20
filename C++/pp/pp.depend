@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1708456005 source:d:\eniad\c++\pp\main.cpp
+1708457629 source:d:\eniad\c++\pp\main.cpp
 	<iostream>
+	<stdexcept>
 
