@@ -1,5 +1,7 @@
 #include <iostream>
-#include <stdexcept>
+#include <time.h>
+#include <stdlib.h>
+#include <conio.h>
 using namespace std;
 
 double monf(int a, int b, char operat) {
@@ -56,5 +58,6 @@ int main() {
     cout << "Entrez un opérateur (+, -, *, /, %) : ";
     cin >> z;
     monf(x, y, z);
+    clrscr();
     return 0;
 }

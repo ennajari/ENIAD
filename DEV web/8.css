@@ -1,0 +1,25 @@
+nav{
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: rgba(78, 186, 28, 0.805);
+    padding: 1%;
+    margin-right: 80%;
+}
+li{
+    box-shadow: 2px 2px 2px black;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(38, 255, 0, 0.623);
+    cursor:pointer;
+    margin-top: 2em;
+    padding: 1.5em;
+    border-radius: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li:hover{
+    background-color: bisque;
+}
