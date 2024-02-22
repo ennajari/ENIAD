@@ -12,11 +12,11 @@
     border-radius: 5rem;
 }
 nav{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     background-color: rgb(219, 139, 36);
     border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-right-radius: 2rem; */
 }
 #HOME{
     background-color: rgb(55, 255, 0);
@@ -49,22 +49,27 @@ li{
 #HOME:hover{
     background-color: rgb(133, 201, 152);
     box-shadow: 2px 2px 2px black;
+    padding: 15px;
 }
 #VOLUNTEER:hover{
     background-color: rgb(133, 201, 152);
     box-shadow: 2px 2px 2px black;
+    padding: 15px;
 }
 #CHAMPAINS:hover{
     background-color: rgb(133, 201, 152);
     box-shadow: 2px 2px 2px black;
+    padding: 15px;
 }
 #CONTACTS:hover{
     background-color: rgb(133, 201, 152);
     box-shadow: 2px 2px 2px black;
+    padding: 15px;
 }
 #VEDOS:hover{
     background-color: rgb(133, 201, 152);
     box-shadow: 2px 2px 2px black;
+    padding: 15px;
 }
 a{
     color: rgb(255, 255, 255);
@@ -268,8 +273,7 @@ margin-left: 1em;
         padding: 0%;
     }
     nav{
-        background-color: rgb(150, 95, 95);
-        
+        background-color: rgb(150, 95, 95);    
     }
     li{
         display:inline;
@@ -307,12 +311,10 @@ margin-left: 1em;
     #container{
         margin-top: 2em;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
     }
     #ouffer1{
         border-radius: 1em;
-        padding: 0.5%;
         background-color: rgba(121, 204, 32, 0.315);
     }
     #offu1{
