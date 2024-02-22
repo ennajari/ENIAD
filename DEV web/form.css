@@ -45,10 +45,10 @@ button[type="reset"] {
 button:hover {
     background-color: #00b31e;
 }
+button[type="reset"]:hover {
+    background-color: #ff0019be;
+}
 #cv{
 border-radius: 1em;
 color: aquamarine;
-}
-button[type="reset"]:hover {
-    background-color: #ff0019be;
 }
