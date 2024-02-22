@@ -135,10 +135,11 @@ h1{
     animation-name: HOpe;
     animation-duration: 2s; 
     animation-iteration-count: infinite;
+    
 }
 @keyframes HOpe {
     from {
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(255, 0, 221);
     }
     to {
         background-color: rgba(255, 119, 0, 0.742);
@@ -242,7 +243,6 @@ h4{
     width: 2vw;
 }
 .fb{
-    
     border-radius: 8em;
     padding: 0.2em;
     background-color: rgb(60, 255, 0);
@@ -264,15 +264,157 @@ margin-left: 1em;
 }
 @media screen and (max-width : 700px) {
     *{
-        margin: 0%;
+        margin:auto;
         padding: 0%;
     }
     nav{
+        background-color: rgb(150, 95, 95);
+        
+    }
+    li{
+        display:inline;
+        margin-top: 26%;
+    }
+    a{
+        font-size: small;
+    }
+    #btn1{
+        width:20%;
+        height: 40%;
+        text-align: center;
+        font-size: small;
+        margin-top: 4%;
+        margin-left: 45%;
+    }
+    #section1 {
+        display: block;
+    }
+    #dev1{
+        margin: auto;
+    }
+    h1{
+        margin-top: auto;
+    }
+    #text1{
+        font-size: large;
+    }
+    #text11{
+        margin-left: 5%;
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container{
+        margin-top: 2em;
         display: flex;
-        flex-direction: column;
-        background-color: rgb(0, 0, 0);
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #ouffer1{
+        border-radius: 1em;
+        padding: 0.5%;
+        background-color: rgba(121, 204, 32, 0.315);
+    }
+    #offu1{
+        box-shadow: 8px 8px 8px black;
+        height: 10vh;
+        border-radius: 50%;
     }
     
+    #ouffer2{
+        border-radius: 1em;
+        padding: 0.5%;
+        background-color: rgba(32, 198, 204, 0.315);
+    }
+    #offu2{
+        box-shadow: 8px 8px 8px black;
+        height: 10vh;
+        border-radius: 50%;
+    }
+    #ouffer3{
+        border-radius: 1em;
+        padding: 0.5%;
+        background-color: rgba(32, 66, 204, 0.315);
+    }
+    #offu3{
+        box-shadow: 8px 8px 8px black;
+        height: 10vh;
+        border-radius: 50%;
+    }
+    #ouffer4{
+        border-radius: 1em;
+        padding: 0.5%;
+        background-color: rgba(204, 84, 32, 0.315);
+    }
+    #offu4{
+        box-shadow: 8px 8px 8px black;
+        height: 10vh;
+        border-radius: 50%;
+    }
+    .text{
+        margin-top: auto;
+        font-size: small;
+        margin-left:20px ;
+    }
+    #section3{
+        display: grid;
+        grid-template-columns: auto;
+        margin-bottom: 2em;
+    }
+    .image5{
+        margin-bottom: 2%;
+    }
+    .para{
+        background-color: #a6a1a7;
+        box-shadow: 2px 2px 2px #ea00ff;
+        margin-right: 2%;
+        border-radius: .5rem;
+    }
+    p{
+        font-size: small;
+    }
+    .fbi{
+        filter: drop-shadow(3px 3px #ea00ff);
+        height: 3vh;
+        width: 2vw;
+    }
+    h5{
+        font-size: small;
+    }
+    #img2 {
+        margin-left: 2%;
+        cursor:no-drop;
+        box-shadow: 8px 8px 8px black;
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 0em;
+        border-top-left-radius: 5em;
+        border-bottom-right-radius: 5em;
+        margin-top: 3%;
+        position: relative;
+        z-index: 1;
+    }
+    #img2:hover{
+        transform: translateY(42px);
+    }
+    #byme{
+        position: absolute;
+        margin-top: 2%;
+        margin-left: 40%;
+        font-family: monospace;
+        font-size: xx-large;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+    }
+    #im5{
+      margin-left: 40%;
+    }
+    #img1 {
+        cursor:help;
+        height: 4vw;
+        width: 4vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5rem;
+    }
+
 }
