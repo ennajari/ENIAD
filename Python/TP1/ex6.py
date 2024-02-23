@@ -1,4 +1,3 @@
-# Définition des taux de TVA pour chaque catégorie
 TVA_A = 0.07
 TVA_B = 0.20
 TVA_C = 0.25
