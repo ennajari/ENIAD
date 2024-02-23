@@ -4,7 +4,8 @@ try:
     if n <= 0:
         print("Veuillez entrer un nombre positif.")
     else:
-        a, b = 0, 1
+        a = 0
+        b = 1
         count = 0
         while count < n:
             print(a, end=" ")
