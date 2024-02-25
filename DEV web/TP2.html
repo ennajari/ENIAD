@@ -4,168 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
-    body{
-        /* background-color: rgb(58, 57, 57); */
-        /* animation: rotateAnimation 15s linear infinite; */
-    }
-    @keyframes rotateAnimation {
-        from {
-            transform: rotate(0deg);
+    <style>
+        .sec1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
         }
-        to {
-            transform: rotate(30deg);
-        }
-    }
-    .devge{
-        display: flex;
-        justify-content: space-between;
-    }
-    #mondiv{
-        box-shadow: 4px -4px 4px 4px rgb(156, 149, 149);
-        height:300px;
-        width:300px;
-        background-color: rgb(255, 0, 174);
-        border-top-left-radius: 91rem;
-        border-bottom-right-radius: 91rem;
-    }
-    @keyframes shadowChange {
-        0% {
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        }
-        50% {
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
-        }
-        100% {
-            box-shadow: 0 0 10px rgba(89, 255, 0, 0.5);
-        }
-    }
-    .mondiv11{
-        box-shadow: -2px 4px 4px 4px rgb(5, 12, 224);
-        height:300px;
-        width:300px;
-        background-color: rgb(21, 218, 21);
-        border-top-left-radius: 91rem;
-        border-bottom-right-radius: 91rem;
-        margin-top: 2%;
         
-    }
-    #mondivv{
-        box-shadow: 4px 4px 4px 4px rgb(224, 158, 5);
-        height:300px;
-        width:300px;
-        background-color: rgb(130, 25, 168);
-        border-top-right-radius: 91rem;
-        border-bottom-left-radius: 91rem;
-        margin-top: 2%;
-        
-    }
-    #mondivvv{
-        position: absolute;
-        height:110px;
-        width:110px;
-        background-color: rgba(255, 0, 0, 0.542);
-        border-radius: 40rem;
-        margin-left: 19%;
-        margin-top: -12%;
-        transition: box-shadow 0.5s ease-in-out;
-        animation: shadowChange 5s infinite alternate;
-    }
-    #mondivvvv{
-        position: absolute;
-        height:110px;
-        width:110px;
-        margin-left: 65%;
-        background-color: rgb(0,0,0);
-        border-radius: 40rem;
-        margin-top: -12%;
-        transition: box-shadow 0.5s ease-in-out;
-        animation: shadowChange 5s infinite alternate;
-    }
-    #mondivvvvv{
-        position: absolute;
-        height:110px;
-        width:110px;
-        margin-left: 42%;
-        margin-top: 26%;
-        background-color: rgba(220, 13, 189, 0.542);
-        border-radius: 40rem;
-        transition: box-shadow 0.5s ease-in-out;
-        animation: shadowChange 5s infinite alternate;
-    }
-    #mondivvvvvv{
-        position: absolute;
-        height:110px;
-        width:110px;
-        margin-left: 42%;
-        margin-top: 53%;
-        background-color: rgba(156, 142, 36, 0.542);
-        border-radius: 40rem;
-        transition: box-shadow 0.5s ease-in-out;
-        animation: shadowChange 5s infinite alternate;
-    }
-    #mondivvvvvvv{
-        position: absolute;
-        height:50px;
-        width:50px;
-        margin-left: -4%;
-        margin-top: -12%;
-        filter:opacity(2px);
-        border-radius: 40rem;
-    }
-    .mondiv1{
-        height:300px;
-        width:300px;
-        background-color: blanchedalmond;
-        border-top-right-radius: 91rem;
-        border-bottom-left-radius: 91rem;
-        box-shadow: -4px -4px 4px 4px rgb(197, 40, 40);
-    }
-    #colorr{
-        margin-top: 2%;
-        width:30vw;
-        height:4vh;
-        background-color: rgb(104, 141, 141);
-        color: aliceblue;
-        cursor:pointer;
-        border-radius: 2rem;
-        font-size: large;
-        text-align: center;
-    }
-    #colorr:hover{
-        background-color: rgb(162, 158, 166);
-        color: black;
-    }
-    label{
-        font-weight: bolder;
-    }
-    .btn1{
-        width: 21vw;
-        height: 5vh;
-        color: rgb(255, 255, 255);
-        margin-top: 2%;
-        cursor: pointer;
-        background-color: rgb(136, 189, 83);
-        border-radius: 2em;
-        margin-left:3% ;
-    }
-    .btn1:hover{
-        background-color: yellowgreen;
-        border-color: tomato;
-    }
-    .sectio1{
-        display: block;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-    }
-</style>
-<script>
+        .div1 {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            border-top-left-radius: 12em;
+            border-bottom-right-radius: 12em;
+            box-shadow: 3px 3px 3px black;
 
-</script>
+        }
+        
+        #divbtn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            font-weight: bolder;
+        }
+        #btnn{
+            margin-left: 2%;
+        }
+        button {
+            margin:1% 0% 1% 0%;
+            cursor: pointer;
+            padding: 1%;
+            color: aliceblue;
+            background: linear-gradient(rgb(0, 0, 0), rgb(120, 113, 78), rgb(0, 0, 0));
+            border-radius: 1em;
+            box-shadow: 4px 4px 4px black;
+        }
+        
+        button:hover {
+            background: linear-gradient(rgb(76, 65, 87), rgb(208, 125, 209), rgb(65, 0, 115));
+        }
+        
+        textarea {
+            margin-top: 1%;
+        }
+        
+        .lista {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            font-weight: bolder;
+        }
+        
+        select {
+            margin-left: 4px;
+            width: 15%;
+            cursor: pointer;
+        }
+        
+        #btn3 {
+            margin-top: 1%;
+        }
+        
+        #Longueur {
+            margin-top: 1%;
+        }
+
+        #Hauteur {
+            margin-top: 1%;
+        }
+    </style>
+</head>
 <body>
-      <!--TP1. -->
+    <section class="sec1">
+        <div class="div1"></div>
+    </section>
+    <div class="lista">
+        <label for="selec">List: </label>
+        <select name="selec" id="selec">
+            <option value="blue">Bleu</option> 
+            <option value="red">Rouge</option>
+            <option value="green">Vert</option>
+            <option value="black">Noir</option>
+            <option value="yellow">Jaune</option>
+        </select> 
+        <button onclick="changeColor()" id="btnn">Changer la couleur</button>
+    </div>
+    <div id="divbtn">
+        <label for="Longueur">Longueur:</label>
+        <input type="text" id="Longueur">
+        <label for="Hauteur">Hauteur:</label> 
+        <input type="text" id="Hauteur">
+        <button onclick="changeSize()">Changer la taille</button>
+        <button onclick="toggleVisibility()">Cacher</button>
+    </div>
+
+ <!--TP1. -->
           <!-- <script>
               var n = prompt("Donner un number pour calculter sa Factorial");
               var fact = 1 
@@ -180,31 +118,33 @@
               document.write("Factorial de " + n + " est: " + result)
               alert("good job")
           </script>       -->
-    <section class="sectio1">
-        <nav class="devge">
-        <div class="mondiv1"></div>
-        <div id="mondiv"></div>
-        <div id="mondivvvvv"></div>
-        <div id="mondivvvvvv"></div>
-       </nav>
-        <label for="list"></label>
-         <select name="colorr" id="colorr">
-            <option value="Bleu">Bleu</option>
-            <option value="Rouge">Rouge</option>
-            <option value="Vert">Vert</option>
-            <option value="Noir">Noir</option>
-            <option value="Jaune">Jaune</option>
-         </select> <br>
-         <button class="btn1">Changer la couleur</button>
 
-        <nav class="devge">
-        <div class="mondiv11"></div>
-        <div id="mondivv"></div>
-        <div id="mondivvv"></div>
-        <div id="mondivvvv"></div>
-       </nav>
-       <img src="gbb.bmp" alt="" id="mondivvvvvvv">
-        </section>
 
+
+    <!-- Javascript TP2 -->
+    <script>
+        function changeColor() {
+            var changecol = document.getElementById("selec").value;
+            document.querySelector(".div1").style.backgroundColor = changecol;
+        }
+        function changeSize() {
+            var longe = document.getElementById("Longueur").value;
+            var large = document.getElementById("Hauteur").value;
+            document.querySelector(".div1").style.width = longe + "px";
+            document.querySelector(".div1").style.height = large + "px";
+        }
+
+        function toggleVisibility() {
+            var div = document.querySelector(".div1");
+            var btn = document.querySelector("#divbtn button:last-of-type"); 
+            if (div.style.display === "none") {
+                div.style.display = "block";
+                btn.textContent = "Cacher";
+            } else {
+                div.style.display = "none";
+                btn.textContent = "Afficher";
+            }
+        }
+    </script>
 </body>
 </html>
