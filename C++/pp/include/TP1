@@ -1,0 +1,16 @@
+#ifndef TP1_
+#define TP1_
+
+
+class TP1
+{
+    public:
+        TP1();
+        virtual ~TP1();
+
+    protected:
+
+    private:
+};
+
+#endif // TP1_

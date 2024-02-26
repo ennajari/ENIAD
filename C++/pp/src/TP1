@@ -1,0 +1,11 @@
+#include "TP1."
+
+TP1::TP1()
+{
+    //ctor
+}
+
+TP1::~TP1()
+{
+    //dtor
+}

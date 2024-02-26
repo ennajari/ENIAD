@@ -9,7 +9,7 @@ int main() {
         }
     }
 
-    std::cout << "La somme des multiples de 3 ou 5 inférieurs à 1000 est : " << somme << std::endl;
+    std::cout << "La somme des multiples de 3 ou 5 infÃ©rieurs Ã  1000 est : " << somme << std::endl;
 
     return 0;
 }
