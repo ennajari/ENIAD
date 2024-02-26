@@ -25,7 +25,7 @@ int main()
     if(verefie_Premier(nbr))
         cout<<nbr<<" est premier"<<endl;
       else
-        cout<<nbr<<"n'ai pas un noumber premier"<<endl;
+        cout<<nbr<<" n'ai pas un noumber premier"<<endl;
      
     }
         return 0;
