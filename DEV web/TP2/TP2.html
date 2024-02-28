@@ -5,7 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+
+    #section{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+        }
+        .Nom{
+            margin-left: 2%;
+            padding: 2%;
+        }
+        .Prenom{
+            padding: 2%;
+        }
+        .email{
+            margin-left: 12%;
+            padding: 2%;
+        }
+        textarea{
+            margin-top: 2%;
+            padding: 2%;
+        }
+</style>
 <body>
-    
+     <secction id="section">
+        <div class="Nom">
+         <label for="Nom">Nom</label>
+         <input type="text" id="Nom" placeholder="Ecrire votre nom ci" required></div>
+         <div class="Prenom">
+         <label for="Prenom">Prenom</label>
+         <input type="text" id="Prenom" placeholder="Ecrire votre Prenom ici" required></div>
+         <div class="Tell">
+         <label for="Tell">Email</label>
+         <input type="email" id="email" placeholder="Ecrire votre Emial ic" required> 
+         </div>
+         <textarea name="comment" id="" cols="30" rows="10" placeholder="Ecrire votre commentaire ici"></textarea>
+        <button id="btn" onclick="Envoyer()">Envoyer</button>
+     </secction>
+     <script>
+       var function(){
+
+       }
+     </script>
 </body>
 </html>
