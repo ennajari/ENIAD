@@ -70,15 +70,12 @@
             let timer;
 
             function showImage() {
-                // Masquer toutes les images
                 images.forEach(img => img.classList.remove('active'));
-                // Afficher seulement l'image active
                 images[index].classList.add('active');
             }
 
             function startCarousel() {
                 timer = setInterval(() => {
-                    // Incrémenter l'index et afficher l'image
                     index = (index + 1) % images.length;
                     showImage();
                 }, 1000); 
@@ -89,14 +86,12 @@
             }
 
             document.getElementById('prevBtn').addEventListener('click', () => {
-                // Arrêter le carrousel et afficher l'image précédente
                 stopCarousel();
                 index = (index - 1 + images.length) % images.length;
                 showImage();
             });
 
             document.getElementById('nextBtn').addEventListener('click', () => {
-                // Arrêter le carrousel et afficher l'image suivante
                 stopCarousel();
                 index = (index + 1) % images.length;
                 showImage();
