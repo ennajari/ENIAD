@@ -7,24 +7,30 @@
 </head>
 <body>
     <script>
-        var x = prompt("Enter un noumber :");
-        var y = prompt("Enter un autre noumber :");
-        
         function function1(x) {
-             var res = parseInt(x) + 5;
-             return res;
+            return parseInt(x) + 5;
         }
-        function function2(x,y){
-            var u = parseInt(x);
-            var o = parseInt(y);
-            return u+o;
+    
+        function function2(x, y) {
+            return parseInt(x) + parseInt(y);
         }
-        function function0(){
-         var i =  prompt("donner un number !!!!")
-          
-        }
-        document.write("function 1 returns:" + function1(x));
-        document.write("<br>function 2 returns: " + function2(x,y));
+    
+        function function0() {
+            var nbr;
+            do {
+                var F0 = prompt("Entrez un nombre :");
+                nbr = parseInt(F0);
+            } while (isNaN(nbr)); 
+    
+            return nbr + 2; 
+        } 
+        var x = prompt("Entrez un nombre :");
+        var y = prompt("Entrez un autre nombre :");
+    
+        document.write("La fonction 1 renvoie : " + function1(x) + "<br>");
+        document.write("La fonction 2 renvoie : " + function2(x, y) + "<br>");
+        document.write("La fonction 0 renvoie : " + function0());
     </script>
+    
 </body>
 </html>

@@ -1,52 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire de Contact</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #000000;
+            cursor: pointer;
+        }
+        input[type="text"]:hover{
+            border: 1px solid #8cff00;
+            cursor:alias;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin-left:50% ;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+        .success-message {
+            background-color: #999494;
+            color: rgb(45, 216, 45);
+            font-size:larger;
+            font-style: italic;
+            font-weight: bolder;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    </style>
 </head>
-<style>
-
-    #section{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-        }
-        .Nom{
-            margin-left: 2%;
-            padding: 2%;
-        }
-        .Prenom{
-            padding: 2%;
-        }
-        .email{
-            margin-left: 12%;
-            padding: 2%;
-        }
-        textarea{
-            margin-top: 2%;
-            padding: 2%;
-        }
-</style>
 <body>
-     <secction id="section">
-        <div class="Nom">
-         <label for="Nom">Nom</label>
-         <input type="text" id="Nom" placeholder="Ecrire votre nom ci" required></div>
-         <div class="Prenom">
-         <label for="Prenom">Prenom</label>
-         <input type="text" id="Prenom" placeholder="Ecrire votre Prenom ici" required></div>
-         <div class="Tell">
-         <label for="Tell">Email</label>
-         <input type="email" id="email" placeholder="Ecrire votre Emial ic" required> 
-         </div>
-         <textarea name="comment" id="" cols="30" rows="10" placeholder="Ecrire votre commentaire ici"></textarea>
-        <button id="btn" onclick="Envoyer()">Envoyer</button>
-     </secction>
-     <script>
-       var function(){
+    <div id="success-message" class="success-message" style="display: none;"></div>
 
-       }
-     </script>
+    <div class="container">
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" placeholder="Votre nom...">
+            <span id="nom-error" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" placeholder="Votre prénom...">
+            <span id="prenom-error" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Votre email...">
+            <span id="email-error" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Votre message..."></textarea>
+            <span id="messageEreurr" class="error-message"></span>
+        </div>
+        <button id="btn">Envoyer</button>
+    </div>
+    <script>
+            document.getElementById("message").addEventListener("input", function() {
+                var message = this.value.trim();
+                var maxChars = 50;
+
+                if (message.length > maxChars) {
+                    this.value = message.substring(0, maxChars);
+                    document.getElementById("messageEreurr").textContent = "Limite de 50 caractères atteinte.";
+                } else {
+                    document.getElementById("messageEreurr").textContent = "";
+                }
+            });
+
+            document.getElementById("btn").addEventListener("click", function() {
+                var nom = document.getElementById("nom").value.trim();
+                var prenom = document.getElementById("prenom").value.trim();
+                var email = document.getElementById("email").value.trim();
+                var errorMessages = document.querySelectorAll('.errorMessage');
+            errorMessages.forEach(function(element) {
+                element.textContent = '';
+            });
+
+            var isValid = true;
+            if (nom=="") {
+                document.getElementById("nom-error").textContent = "nom est oblegatoire";
+                isValid = false;
+            } else if (!/^[a-zA-Z]+$/.test(nom)) {
+                document.getElementById("nom-error").textContent = "nom ne doit contenir que des lettres.(a-z A-Z)";
+                isValid = false;
+            }
+            if (prenom=="") {
+                document.getElementById("prenom-error").textContent = "prénom oblegatoire";
+                isValid = false;
+            } else if (!/^[a-zA-Z]+$/.test(prenom)) {
+                document.getElementById("prenom-error").textContent = "prénom ne doit contenir que des lettres(a-z A-Z).";
+                isValid = false;
+            }
+            if (email=="") {
+                document.getElementById("email-error").textContent = "email est oblegatoire";
+                isValid = false;
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                document.getElementById("email-error").textContent = "email invalide";
+                isValid = false;
+            }
+            if (isValid) {
+                var successMessage = document.getElementById("success-message");
+                successMessage.textContent = "Formulaire envoyé avec succès !🙌";
+                successMessage.style.display = "block";
+            }
+        });
+</script>
 </body>
 </html>
