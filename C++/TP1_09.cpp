@@ -1,23 +1,24 @@
 #include <iostream>
-#include <string>
-#include <cctype>
+using namespace std;
 
-int compterVoyelles(const std::string& chaine) {
-    int nombreVoyelles = 0;
-    for (char c : chaine) {
-        char lowercaseC = std::tolower(c);
-        if (lowercaseC == 'a' || lowercaseC == 'e' || lowercaseC == 'i' || lowercaseC == 'o' || lowercaseC == 'u') {
-            nombreVoyelles++;
+int compterVoyelles(const string& chaine) {
+    int nbVoyelles = 0;
+    for (int i = 0; i < chaine.size();i++) {
+        char caractere = chaine[i];
+        if (caractere == 'a' || caractere == 'e' || caractere == 'i' ||caractere == 'o' || caractere == 'u' || caractere == 'y') {
+             nbVoyelles++;
         }
     }
-    return nombreVoyelles;
+    return nbVoyelles;
 }
 
 int main() {
-    std::string chaine;
-    std::cout << "Entrez une chaine de caracteres : ";
-    std::getline(std::cin, chaine);
-    int voyelles = compterVoyelles(chaine);
-    std::cout << "Le nombre de voyelles dans la chaine est : " << voyelles << std::endl;
+    string saisie;
+    cout << "Entrez une chaine de caracteres : ";
+    getline(cin, saisie);
+
+    int resultat = compterVoyelles(saisie);
+    cout << "Nombre de voyelles : " << resultat <<endl;
+
     return 0;
 }

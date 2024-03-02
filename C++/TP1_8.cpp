@@ -2,7 +2,7 @@
 
 int sommeDiviseurs(int nombre) {
     int somme = 0;
-    for (int i = 1; i <= nombre / 2; ++i) {
+    for (int i = 1; i <= nombre / 2; i++) {
         if (nombre % i == 0) {
             somme += i;
         }
