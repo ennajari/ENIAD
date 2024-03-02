@@ -9,7 +9,5 @@ using namespace std;
         while (true)
         {
            for( int i = 0 ; i <)
-        }
-        
-        
+        }          
     }
