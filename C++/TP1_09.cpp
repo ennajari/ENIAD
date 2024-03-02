@@ -3,8 +3,7 @@ using namespace std;
 
 int compterVoyelles(const string& chaine) {
     int nbVoyelles = 0;
-    for (int i = 0; i < chaine.size();i++) {
-        char caractere = chaine[i];
+    for (char caractere : chaine) {
         if (caractere == 'a' || caractere == 'e' || caractere == 'i' ||caractere == 'o' || caractere == 'u' || caractere == 'y') {
              nbVoyelles++;
         }
