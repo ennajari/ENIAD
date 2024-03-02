@@ -1,15 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int compterVoyelles(const string& chaine) {
-    int nbVoyelles = 0;
-    for (char caractere : chaine) {
-        if (caractere == 'a' || caractere == 'e' || caractere == 'i' ||caractere == 'o' || caractere == 'u' || caractere == 'y') {
-             nbVoyelles++;
-        }
-    }
-    return nbVoyelles;
-}
+int compterVoyelles(const string& chaine);
 
 int main() {
     string saisie;
@@ -20,4 +12,14 @@ int main() {
     cout << "Nombre de voyelles : " << resultat <<endl;
 
     return 0;
+}
+
+int compterVoyelles(const string& chaine) {
+    int nbVoyelles = 0;
+    for (char caractere : chaine) {
+        if (caractere == 'a' || caractere == 'e' || caractere == 'i' ||caractere == 'o' || caractere == 'u' || caractere == 'y') {
+             nbVoyelles++;
+        }
+    }
+    return nbVoyelles;
 }
