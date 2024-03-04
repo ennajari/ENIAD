@@ -1,6 +1,6 @@
 import math
 def cube(x):
-    return x*x*x
+    return x**3
 
 def volume_Sphere (vol):
      v = 4/3*math.pi*cube(n)

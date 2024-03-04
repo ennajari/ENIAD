@@ -9,8 +9,8 @@ int main(){
         cin>>n;
         int T[n];
     for(int i = 0 ; i < n ; i++){
-        cout<<"Taper elemnt N :"<<i+1<<endl;
-        cin>>T[i];
+
+
     }
 
     int nbr;
