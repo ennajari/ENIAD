@@ -48,6 +48,7 @@
             <input type="text" id="Tell"> 
             <a href="#" class="removeLink">Supprimer</a>
         </div>
+
         <div class="btn">
             <button id="addPhone">Ajouter numéro de téléphone</button> 
         </div>
@@ -82,7 +83,7 @@
                 div.appendChild(label);
                 div.appendChild(input);
                 div.appendChild(removeLink);
-                section.insertBefore(div, addPhoneBtn.parentNode.nextSibling);
+                section.insertBefore(div, addPhoneBtn.parentNode);
             }
 
             function removePhoneNumber(event) {

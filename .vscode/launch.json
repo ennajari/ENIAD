@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/ENIAD/C++/TP1/TP2",
-      "program": "d:/ENIAD/C++/TP1/TP2/build/Debug/outDebug",
+      "cwd": "d:/ENIAD/C++",
+      "program": "d:/ENIAD/C++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
