@@ -10,7 +10,7 @@ print(indice_17)
 liste.remove(38)
 print(liste)
 sous_liste_2_3 = liste[1:3]
-print(sous_liste_2_3)
+print("kkkkkkkkkkkk",sous_liste_2_3)
 sous_liste_debut_2 = liste[:2]
 print(sous_liste_debut_2)
 sou_liste_3_fin = liste[2:]
