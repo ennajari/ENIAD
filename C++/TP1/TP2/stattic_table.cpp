@@ -15,6 +15,6 @@ int main() {
     for(auto elemnt : table){
         cout<<elemnt<<endl;
     }
-    
+    return 0;
 } 
 
