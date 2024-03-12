@@ -2,6 +2,8 @@
 using 
 namespace std;
 int main() {
+    // Ceux dont la taille est connue à l'avance, les tableaux statiques.
+    // Ceux dont la taille peut varier en permanence, les tableaux dynamiques.
     int taille;
     cout<<"donner la taile de votre tableau :"<<endl;
     cin>>taille;
@@ -13,5 +15,6 @@ int main() {
     for(auto elemnt : table){
         cout<<elemnt<<endl;
     }
+    
 } 
 
