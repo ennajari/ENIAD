@@ -8,23 +8,24 @@ class Persone {
             int age;
     public :
             Persone(string _nom,int _age) : nom(_nom),age(_age){}
-    public :  
-            Persone(string _nom , int _age) 
-                {
-                    this->nom = _nom;
-                    this->age = _age;
-                } 
-string getNom() const  {return nom;}
+    // public :  
+    //         Persone(string _nom , int _age) 
+    //             {
+    //                 this->nom = _nom;
+    //                 this->age = _age;
+    //             } 
+string getNom() const {return nom;}
 int getage() const {return age;}
 
-void setNom(string _nom) const { this->nom = _nom;}
-void setNom(int _age) const { this->nom = _age;}
+void setNom(string _nom)  { nom = _nom;}
+void setAge(int _age)  { nom = _age;}
 
 void afficher(){
     cout<<"votre nom & perenom est :"<<nom<<"\net votre age est:"<<age<<endl;
   }
 
 };
+
 int main()
 {
     string nom;
