@@ -1,33 +1,39 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int main()
-{
+
+int main() {
     int taille;
-     vector<int> vect1;
-    cout << "Donner la taille du vecteur 1 : ";
+    cout << "Donner la taille des vecteurs : ";
     cin >> taille;
-    for(int i = 0 ; i < taille ; i++){
-        int elemnt;
-        cout << "Taper elemnt"<<i+1<<" de vecteur 1 :" ;
-        cin>>elemnt;
-        vect1.push_back(elemnt);
+
+    vector<int> vect1(taille);
+    vector<int> vect2(taille);
+    vector<int> vect3(taille);
+
+    // Input elements for vect1
+    cout << "Taper les éléments du vecteur 1 : ";
+    for(int i = 0; i < taille; i++) {
+        cin >> vect1[i];
     }
-     vector<int>vect2;
-    for(int i = 0 ; i < taille ; i++){
-        int elemnt;
-        cout << "Taper elemnt"<<i+1<<" de vecteur 2 :" ;
-        cin>>elemnt;
-        vect2.push_back(elemnt);
+
+    // Input elements for vect2
+    cout << "Taper les éléments du vecteur 2 : ";
+    for(int i = 0; i < taille; i++) {
+        cin >> vect2[i];
     }
-    vector<int>vect3(taille);
-    for(int i = 0 ; i < taille ; i++){
-       vect3 += vect1[i] * vect2[i];
+
+    // Element-wise multiplication and storing in vect3
+    for(int i = 0; i < taille; i++) {
+        vect3[i] = vect1[i] * vect2[i];
     }
-    //Affichage des resultats
-    for (size_t i = 0; i < taille; i++)
-    {
-       cout <<vect3[i]<<endl;
+
+    // Displaying the result
+    cout << "Le résultat de la multiplication élément par élément des deux vecteurs est : ";
+    for(int i = 0; i < taille; i++) {
+        cout << vect3[i] << " ";
     }
+    cout << endl;
+
     return 0;
 }
