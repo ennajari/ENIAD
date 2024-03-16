@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/ENIAD/C++/TP3",
-      "program": "d:/ENIAD/C++/TP3/build/Debug/outDebug",
+      "cwd": "d:/ENIAD/C++/TP2_cppv1",
+      "program": "d:/ENIAD/C++/TP2_cppv1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
