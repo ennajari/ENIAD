@@ -23,14 +23,17 @@ void setTitre(string _titre){
     titre = _titre;
 }
 void setAnnepublication(string _Annepublication){
-    titre = _Annepublication;
+    Annepublication = _Annepublication;
 }
 void setauteur(string _auteur){
-    titre = _auteur;
+    auteur = _auteur;
 }
 };
 
 class Bibliotheque{
-    public: int list_livre;
-
-}
+        vector<Livre> livres;
+    void ajouterLivre(const Livre& livre){
+        livres.push_back(livre);
+    }
+    
+};
