@@ -4,27 +4,19 @@
 #include <string>
 
 class Vehicule {
-private:
-    std::string marque;
-    std::string modele;
-    int anneeFabrication;
-
 public:
     // Constructeur
-    Vehicule(const std::string& _marque, const std::string& _modele, int _anneeFabrication);
+    Vehicule(const std::string& marque, const std::string& modele, int annee);
 
-    // Méthodes d'accès en lecture
+    // Accesseurs
     std::string getMarque() const;
     std::string getModele() const;
     int getAnneeFabrication() const;
 
-    // Méthodes d'accès en écriture
-    void setMarque(const std::string& _marque);
-    void setModele(const std::string& _modele);
-    void setAnneeFabrication(int _anneeFabrication);
-
-    // Méthode pour afficher les informations du véhicule
-    void afficher() const;
+private:
+    std::string marque_;
+    std::string modele_;
+    int anneeFabrication_;
 };
 
 #endif // VEHICULE_H
