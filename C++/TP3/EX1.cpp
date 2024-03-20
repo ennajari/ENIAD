@@ -8,12 +8,7 @@ class Persone {
             int age;
     public :
             Persone(string _nom,int _age) : nom(_nom),age(_age){}
-    // public :  
-    //         Persone(string _nom , int _age) 
-    //             {
-    //                 this->nom = _nom;
-    //                 this->age = _age;
-    //             } 
+ 
 string getNom() const {return nom;}
 int getage() const {return age;}
 

@@ -55,15 +55,12 @@ public:
 int main() {
     Bibliotheque bibliotheque;
 
-    // Ajout de quelques livres
     bibliotheque.ajouterLivre(Livre("Le Seigneur des Anneaux", "J.R.R. Tolkien", 1954));
     bibliotheque.ajouterLivre(Livre("Harry Potter à l'école des sorciers", "J.K. Rowling", 1997));
     bibliotheque.ajouterLivre(Livre("1984", "George Orwell", 1949));
 
-    // Affichage de tous les livres
     bibliotheque.afficherLivres();
 
-    // Recherche d'un livre par titre
     string titreRecherche = "Le Seigneur des Anneaux";
     Livre* livreTrouve = bibliotheque.rechercherLivreParTitre(titreRecherche);
     if (livreTrouve != nullptr) {
