@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/ENIAD/C++/TP4",
-      "program": "d:/ENIAD/C++/TP4/build/Debug/outDebug",
+      "cwd": "d:/ENIAD/C++/Simulation-de-ZOO",
+      "program": "d:/ENIAD/C++/Simulation-de-ZOO/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
