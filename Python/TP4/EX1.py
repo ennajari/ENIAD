@@ -1,18 +1,22 @@
 class Compte:
-    def __init__(self,nom,num,balance):
+    def __init__(self, nom, numero, balance):
         self.nom = nom
-        self.num = num
+        self.numero = numero
         self.balance = balance
-    def Depot(self,amount):
-        self.balance += amount
-    def Retirer(self,amount):
-        if amount <= self.balance:
-            self.balance -= amount
+
+    def deposer(self, montant):
+        self.balance += montant
+
+    def retirer(self, montant):
+        if self.balance >= montant:
+            self.balance -= montant
         else:
-            print("hhhhhh seeer tqwed")
-        
-client1 = Compte('ASMA',1234,100)
+            print("Solde insuffisant.")
 
-client1.Retirer(500)
+asmaa_compte = Compte("Asmaa", 12345, 20000)
 
-print(client1.nom,client1.num,client1.balance)
+asmaa_compte.deposer(3000)
+
+asmaa_compte.retirer(800)
+
+print("Le solde du compte d'Asmaa est de", asmaa_compte.balance, "DH")
