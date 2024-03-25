@@ -1,4 +1,5 @@
 class animial:
+    
     def __init__(self,nom,espace,age=0):
         self.nom = nom
         self.espace = espace
