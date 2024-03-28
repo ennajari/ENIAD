@@ -4,6 +4,7 @@ import time
 import winsound
 
 historique = []
+
 def demarrer_minuteur():
     nb_cycles = int(saisie_cycles.get())
     secondes_exercice = int(saisie_exercice.get())
@@ -81,6 +82,5 @@ tree = ttk.Treeview(root, columns=("Cycle", "Durée"), show="headings")
 tree.heading("Cycle", text="Cycle", anchor=tk.CENTER)
 tree.heading("Durée", text="Durée (s)", anchor=tk.CENTER)
 tree.pack(pady=20)
-
 
 root.mainloop()
