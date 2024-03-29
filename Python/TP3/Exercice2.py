@@ -1,3 +1,4 @@
+
 def chercherDiv(nbr) :
     L = []
     for i in range(1,nbr+1,1) : 
