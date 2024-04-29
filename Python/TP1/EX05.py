@@ -4,7 +4,6 @@ resultat = list(set(listD))
 print(resultat)
 
 
-
 # Example of inheritance and polymorphism
 class Animal:
     def make_sound(self):
