@@ -3,7 +3,6 @@ class Animal:
         self.nom = nom
         self.espece = espece
         self.age = age
-
     def __str__(self):
         return "Bonjour, je m'appelle {} et je suis un {} de {} ans".format(self.nom, self.espece, self.age)
 
