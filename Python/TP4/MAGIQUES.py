@@ -5,7 +5,6 @@ class Animal:
         self.age = age
     def __str__(self):
         return "Bonjour, je m'appelle {} et je suis un {} de {} ans".format(self.nom, self.espece, self.age)
-
     def make_sound(self):
         pass # Here, you can implement the specific sound of each animal
 
