@@ -3,4 +3,4 @@ class myString():
         self.string = string
     def append(self,x):
         self.x = x
-    
+
