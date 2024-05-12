@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 import time
 import winsound
-
 historique = []
 
 def demarrer_minuteur():
