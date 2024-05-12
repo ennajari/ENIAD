@@ -9,4 +9,4 @@ class animial:
 chat = animial("Minou","chat")
 chat.se_presenter()
 print(chat.__dict__)
-             
+         
