@@ -1,4 +1,3 @@
-
 try:
     n = int(input("Entrez le nombre de termes de la séquence de Fibonacci : "))
     if n <= 0:
