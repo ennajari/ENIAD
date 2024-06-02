@@ -5,8 +5,7 @@ import winsound
 historique = []
 def demarrer_minuteur():
     nb_cycles = int(saisie_cycles.get())
-    secondes_exercice = int(saisie_exercice.get())
-    secondes_repos = int(saisie_repos.get())
+    secondes_exercice = int(saisie_exercice.get())    secondes_repos = int(saisie_repos.get())
 
     for cycle in range(nb_cycles):
         etiquette_minuteur.config(text="Exercice", fg="blue")
