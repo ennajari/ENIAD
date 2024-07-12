@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 int Somme_des_elements(int table[],int taille);
-
 int main(){
     int taille;
    cout<<"donner la taille de votre tableau : "<<endl;
