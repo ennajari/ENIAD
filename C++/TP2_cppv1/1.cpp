@@ -8,7 +8,6 @@ int main(){
   int table[taille];
   int resulta = Somme_des_elements(table , taille);
   cout << "La somme des elements du tableau est : "<<resulta<<endl;
-
 }
 int Somme_des_elements(int table[],int taille){
     int  somme=0;
