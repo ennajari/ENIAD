@@ -4,7 +4,6 @@ int main()
 {
     while (true)
     {
-
         cout<< "=================| la table de multiplication |2=============="<<endl;
     int n;
     cout<<"donner un number pour calculer sa factoriel : "<<endl;
